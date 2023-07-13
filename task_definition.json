@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:522575784142:task-definition/desplieguephptask:3",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:522575784142:task-definition/desplieguephptask:6",
     "containerDefinitions": [
         {
             "name": "desplieguephp",
@@ -26,7 +26,7 @@
     "taskRoleArn": "arn:aws:iam::522575784142:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::522575784142:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 3,
+    "revision": 6,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -60,7 +60,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-13T05:14:56.930Z",
+    "registeredAt": "2023-07-13T15:13:44.198Z",
     "registeredBy": "arn:aws:iam::522575784142:root",
     "tags": []
 }
