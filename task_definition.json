@@ -1,0 +1,66 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:522575784142:task-definition/desplieguephp:1",
+    "containerDefinitions": [
+        {
+            "name": "desplieguephp",
+            "image": "522575784142.dkr.ecr.us-east-2.amazonaws.com/php-repo",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "desplieguephp-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": []
+        }
+    ],
+    "family": "desplieguephp",
+    "taskRoleArn": "arn:aws:iam::522575784142:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::522575784142:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2023-07-13T02:17:18.794Z",
+    "registeredBy": "arn:aws:iam::522575784142:root",
+    "tags": []
+}
